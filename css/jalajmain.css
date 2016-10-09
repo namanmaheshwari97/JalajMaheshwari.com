@@ -1,0 +1,124 @@
+.landing{
+    height: 100vh;
+ 	background-image: url('../assets/homebg.jpg');
+ 	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jlj{
+	margin-top: 18vh;
+	
+	text-align: center;
+}
+
+.jljthumb{
+	height: 270px;
+	width: 270px;
+	margin-top: 22vh;
+	border-radius: 220px;
+
+}
+
+.unilogo{
+	height:200px;
+	width: 200px;
+}
+.centeralign{
+	text-align: center;
+}
+
+.rightalign{
+	text-align: right;
+}
+
+.contain{
+	background-color: pink;
+}
+
+.jumbotron_about {
+    background-color:transparent !important; 
+}
+
+.jumbotron_work {
+	background-color: white !important;
+}
+
+.jumbotron_skills {
+	background: url("../assets/skillsbg.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: color-dodge;
+}
+
+.jumbotron_contact {
+	background: url("../assets/contactbg.jpg");
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: screen;
+}
+
+.jumbotron_projects {
+	background-color: white !important;
+}
+
+.delayed {
+	-webkit-animation-delay: 1s;
+}
+
+.thumbnail_bg{
+	background-color: white !important;
+}
+
+.modalimage{
+  display: block;
+  max-width:100%;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+
+.modal {
+  text-align: center;       /* Center the modal window. */
+}
+
+.modal-dialog {
+  width: auto;
+  margin: 30px auto;
+  display: inline-block;
+  overflow: auto;
+}
+
+
+.footermarg{
+
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+/*
+
+
+MEDIA QUERIES COME BELOW THIS COMMENT.
+DO NOT TYPE ANY MEDIA QUERIES ABOVE ME.
+
+
+*/
+
+
+
+	/*Media Queries*/
+@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+	.jljthumb{
+		margin-top: 25%;
+	}
+}
+
+
+/*
+@media only screen and (max-device-width: 480px) {
+		.jljthumb{
+			margin-top: 25%;
+		}
+	}*/
