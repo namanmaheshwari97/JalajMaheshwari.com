@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en-us" manifest="jmaheshwari.appcache">
+    <head>
+        <!-- Meta tags here -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, user-scalable=false;">
+        
+        <title>
+            Jalaj Maheshwari | Mechanical Design
+        </title>
+    
+        <!-- LINKS HERE -->
+        <link href='css/bootstrap-theme.min.css' rel='stylesheet' type='text/css'>
+        <link href='css/jalajmain.css' rel='stylesheet' type='text/css'>
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+        <link href="css/hover.css" rel="stylesheet">
+        <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>  
+        <link href='css/animate.css' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
+        <script src="js/scrolling-nav.js"></script>
+        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
+
+        <script>
+            $("#myModal").on("show.bs.modal", function(e) {
+    var link = $(e.relatedTarget);
+    $(this).find(".modal-body").load(link.attr("href"));
+});
+        </script>
+
+    </head>
+    
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">    
+<!-- NAVBAR STARTS HERE -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-inner">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll navbar-left" href="#page-top"  style="font-family:'Roboto',sans-serif">Jalaj Maheshwari</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="./index.html#page-top">Home</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#page-top">Home</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#about">About Me</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#skills">Skills</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#work">Professional Experience</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#publications">Publications</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#projects">Research Projects</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#contact">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 style="text-align: center; margin-top: 100px"> Computational Modeling </h1>
+                    <ol class="breadcrumb">
+                      <li><a href="./index.html#projects">Research Projects</a></li>
+                      <li class="active">Computational Modeling</li>
+                    </ol>
+                <hr>
+            </div>
+
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Numerical Methods and Modeling of Mathematical Schemes to Solve Ordinary Differential Equations (Independent)</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li><p>Coded numerical algorithms on MATLAB to solve linear and non-linear ordinary differential equations.</p></li>
+                        <li><p>Tested algorithms for different sizes of system of equations.</p></li>
+                        <li><p>Studied variation in solution and the marginal error with refinement in grid resolution.</p></li>
+                    </ul>
+
+                    <hr>
+
+                    <p>The various projects under the broader concept of numerical methods deal with solving a system of linear and non-linear ordinary differential equations for a boundary value problem. The purpose of these projects is to get familiarized with the different numerical solving schemes existing to solve different computational problems.</p>
+
+                    <p>The linear system of equations is solved using the LU decomposition algorithm, Jacobi and Gauss-Seidel iterative algorithm, and the Newton’s Method solver. For the non-linear equations, the analytical and the arc-length continuation is implemented to graph out the curve along which the solution for the equation may exist. Further, the implicit and explicit Euler methods are implemented to find solutions to non-linear ordinary differential equations.</p>
+
+                    <p>All algorithms are coded on MATLAB and are implemented for a given set of equations and boundary conditions. The graphs and contours are plotted for different grid resolutions and sizes of equations.</p>
+
+                    <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#numerical1"><img src="./assets/numerical1.png" /></button>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#numerical2"><img src="./assets/numerical2.png" /></button>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#numerical3"><img src="./assets/numerical3.png" /></button>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+
+<!-- NEXT PROJECT -->
+
+
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Bachelor’s Thesis on ‘Energy Harvesting from Aero-elastic Instabilities’ (Independent)</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li><p>Computationally modeled small energy harvesting device subjected to aero-elastic instabilities.</p></li>
+                        <li><p>Used fluttering motion of harvester to further produce electricity by use of piezoelectric patches.</p></li>
+                        <li><p>Varied material properties of harvester to study change in piezoelectric voltage generated.</p></li>
+                    </ul>
+
+                    <hr>
+
+                    <p>Aero-elastic instability or flutter, in particular, is an undesirable phenomena experienced by bodies exposed to cross wind and can cause serious damage due to fluid-structure interaction especially in airplane wings. However, this property of aero-elastic instability can be used on a small body to harness energy from the cross wind.</p>
+
+                    <p>Computational modelling of a small energy harvesting device is carried out to study the effects of wind on the body, which can be further used to produce electricity. The present study shows the aerodynamic response of a T-shaped flat plate with a tip mass. Piezoelectric strips are placed on either side of the plate near the region where the plate is fixed. The bottom side of both piezoelectric bodies is given zero voltage. When the harvester body flutters, mechanical strain is generated in the harvester, which causes strain in the piezoelectric bodies, thus, generating a voltage in each piezo body.</p>
+
+                    <p>The complex fluid-structure interaction requires coupling of fluid flow around the harvester, with the structural model. Computational fluid dynamics based on the incompressible Navier- Stokes equation and computational structural analysis based on the Lagrangian equation of motion is carried out using a partitioned solving approach in ANSYS.</p>
+
+                    <div class="col-lg-4 col-md-4">
+                         <button class="thumbnail" type="button" data-toggle="modal" data-target="#energy1"><img src="./assets/energy1.png" /></button>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                         <button class="thumbnail" type="button" data-toggle="modal" data-target="#energy2"><img src="./assets/energy2.png" /></button>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                         <button class="thumbnail" type="button" data-toggle="modal" data-target="#energy3"><img src="./assets/energy3.png" /></button>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+<!-- NEXT PROJECT -->
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Simulation of Combustion in IC Engines for Varying Parameters (Team)</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li><p>Used ANSYS Fluent to simulate combustion in engine incorporating appropriate models.</p></li>
+                        <li><p>Tested algorithms for different sizes of system of equations.</p></li>
+                        <li><p>Varied geometrical parameters of engine to check the change in combustion process and different properties specific to each geometry.</p></li>
+                    </ul>
+
+                    <hr>
+
+                    <p>The study of combustion in engines has been under significant pressure for improvement. In this project we study the effects of varying geometry on the different parameters of the engine during combustion in a 4-stroke Compression Ignition (CI) engine operating on a diesel cycle, using diesel as a primary fuel.</p>
+
+                    <p>We first discuss the various types of Internal Combustion engines and briefly discuss the cycles they work on, particularly the Otto cycle and the Diesel cycle. We have further defined two distinct geometries which we use for our simulations. Here we make a crude approximation about the combustion process involving the power stroke. We then move on to define the meshing that is done in order to proceed with the calculations.</p>
+
+                    <p>The solution initialization and the boundary conditions are then set corresponding to our approximations, and the simulation is then carried of the two cylinder heads. The results are the noted and subsequently the conclusions are drawn. CATIA V5 helps us prepare the geometry and the ANSYS Workbench – FLUENT helps us in carrying out our study and simulating the particular problem at hand.</p>
+
+                    <div class="col-lg-6 col-md-6">
+                         <button class="thumbnail" type="button" data-toggle="modal" data-target="#icengine1"><img src="./assets/icengine1.png" /></button>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                         <button class="thumbnail" type="button" data-toggle="modal" data-target="#icengine2"><img src="./assets/icengine2.png" /></button>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+
+    <!-- numerical -->
+
+    <div id="numerical1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/numerical1.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <div id="numerical2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/numerical2.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="numerical3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/numerical3.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- energy -->
+
+    <div id="energy1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/energy1.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <div id="energy2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/energy2.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="energy3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/energy3.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- icengine -->
+
+    <div id="icengine1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/icengine1.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <div id="icengine2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/icengine2.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- SCRIPTS START HERE -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script>
+        // Changing the defaults
+        window.sr = ScrollReveal({ reset: true });
+
+        // Customizing a reveal set
+        sr.reveal('.foo', { duration: 500 });
+        sr.reveal('.bar', { duration: 1000 });
+
+    </script>
+
+    <script>
+    // Add scrollspy to <body>
+$('body').scrollspy({target: ".navbar", offset: 50}); 
+
+// Add smooth scrolling to all links inside a navbar
+$("#navbar a").on('click', function(event){
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash (#)
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    } // End if statement
+  });
+});
+</script>
+
+    </body>
+</html>

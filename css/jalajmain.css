@@ -12,12 +12,22 @@
 	text-align: center;
 }
 
+.projthumb{
+	height: 350px;
+	width: 350px;
+}
+
 .jljthumb{
 	height: 270px;
 	width: 270px;
 	margin-top: 22vh;
 	border-radius: 220px;
 
+}
+
+.modalimage{
+	height: auto;
+	width: 200px;
 }
 
 .unilogo{
@@ -30,6 +40,12 @@
 
 .rightalign{
 	text-align: right;
+}
+
+.gallery
+{
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .contain{

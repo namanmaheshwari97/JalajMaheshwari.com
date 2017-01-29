@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en-us" manifest="jmaheshwari.appcache">
+	<head>
+		<!-- Meta tags here -->
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      	<meta name="viewport" content="width=device-width, user-scalable=false;">
+		
+		<title>
+			Jalaj Maheshwari | Mechanical Design
+		</title>
+		
+		<!-- LINKS HERE -->
+		<link href='css/bootstrap-theme.min.css' rel='stylesheet' type='text/css'>
+		<link href='css/jalajmain.css' rel='stylesheet' type='text/css'>
+		<link href="css/scrolling-nav.css" rel="stylesheet">
+		<link href="css/hover.css" rel="stylesheet">
+		<link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+		<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>	
+		<link href='css/animate.css' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
+		<script src="js/scrolling-nav.js"></script>
+		<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
+
+		<script>
+			$("#myModal").on("show.bs.modal", function(e) {
+    var link = $(e.relatedTarget);
+    $(this).find(".modal-body").load(link.attr("href"));
+});
+		</script>
+
+	</head>
+	
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">    
+<!-- NAVBAR STARTS HERE -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    	<div class="navbar-inner">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll navbar-left" href="#page-top"  style="font-family:'Roboto',sans-serif">Jalaj Maheshwari</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="./index.html#page-top">Home</a>
+                    </li>
+	                <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#page-top">Home</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#about">About Me</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#skills">Skills</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#work">Professional Experience</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#publications">Publications</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#projects">Research Projects</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#contact">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-lg-12">
+    			<h1 style="text-align: center; margin-top: 100px"> Mechanical Design </h1>
+    				<ol class="breadcrumb">
+					  <li><a href="./index.html#projects">Research Projects</a></li>
+					  <li class="active">Mechanical Design</li>
+					</ol>
+    			<hr>
+    		</div>
+
+    		<div class="col-lg-2">
+    		</div>
+    		<div class="col-lg-8">
+    			<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Design of an Axial Compressor for Use in the SpaceX Hyperloop System (Team)</h3>
+				  </div>
+				  <div class="panel-body">
+				    <ul>
+				    	<li><p>Designed 20:1 compression ratio axial compressor for given Hyperloop operating conditions.</p></li>
+				    	<li><p>Studied velocity triangles for rotors and stators to model each compression stage.</p></li>
+				    </ul>
+
+				    <hr>
+
+					<p>The compressor is an integral part of the Hyperloop system, enabling the whole pod to reach its maximum attainable speed and provide enough power for the same. Over the course of this project, we have designed an axial compressor with a pressure ratio of 20:1 to achieve this purpose.</p>
+
+					<p>The design in based on the inlet and exit conditions mentioned in the SpaceX Hyperloop Alpha paper. The effective length, inlet and exit velocity of the air, the desired compressions required along with the manufacturing specifications have been incorporated to reach the final design for the axial compressor.</p>
+
+					<p>Velocity triangles at each compression stage are studied for the rotors and the stators. Based on these calculations, the optimum blade angle has been devised for each compression stage. The geometric modeling of the complete compressor is carried out using Solidworks.</p>
+
+				    <div class="col-lg-4 col-md-4">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#hyperloop1"><img src="./assets/hyperloop1.jpg" /></button>
+					</div>
+				    <div class="col-lg-4 col-md-4">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#hyperloop2"><img src="./assets/hyperloop2.jpg" /></button>
+					</div>
+				    <div class="col-lg-4 col-md-4">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#hyperloop3"><img src="./assets/hyperloop3.png" /></button>
+					</div>
+
+				  </div>
+				</div>
+    		</div>
+    		<div class="col-lg-2">
+    		</div>
+<!-- NEXT PROJECT -->
+		</div>
+		<div class="row">
+    		<div class="col-lg-2">
+    		</div>
+    		<div class="col-lg-8">
+    			<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Simulation and Analysis of Human Skeleton Joint (Team)</h3>
+				  </div>
+				  <div class="panel-body">
+				    <ul>
+				    	<li><p>Simulated normal walking cycle and identified joint reaction forces at the hip, knee and ankle joints using OpenSIM.</p></li>
+				    	<li><p>Studied ankle-foot orthosis to develop basic design for foot orthotic to prevent ankle injury.</p></li>
+				    	<li><p>Explored reduction in metabolic costs in normal gait cycle.</p></li>
+				    </ul>
+
+				    <hr>
+
+					<p>Biological systems are much more complex than man-made systems. Hence, research in biomechanics is done in an iterative process of hypothesis and verification, including several steps of modeling, computer simulation and experimental measurements. This design project explores the power and relevance of numerical methods employed by state-of-the-art modeling and simulation tools (OpenSim in this case) in the context of research in biomechanics of the human musculoskeletal system.</p>
+
+					<p>It is divided into 3 independent sections – joint reaction estimation, simulation based design to reduce metabolic cost, and simulation based design to prevent ankle injury – each with a different type of computational analysis. The applications and merits of these methods are looked into in addition to acknowledging their limitations and simplifying assumptions. We realize that, given reliable experimental data, accurate and insightful results can be arrived at and hypotheses validated, using such methods. They also circumvent many of the cumbersome, expensive and often invasive experimental methods required to achieve the same results.</p>
+
+					<p>Apart from validating hypotheses, these results can be exploited to a great effect in the rapid, iterative evaluation and optimization of designs of assistive devices and training programs for rehabilitation, or enhancement of athletic performance.</p>
+
+				    <div class="col-lg-4 col-md-4">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#humanskeleton1"><img src="./assets/humanskeleton1.png" /></button>
+					</div>
+				    <div class="col-lg-4 col-md-4">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#humanskeleton2"><img src="./assets/humanskeleton2.png" /></button>
+					</div>
+				    <div class="col-lg-4 col-md-4">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#humanskeleton3"><img src="./assets/humanskeleton3.png" /></button>
+					</div>
+
+				  </div>
+				</div>
+    		</div>
+    		<div class="col-lg-2">
+    		</div>
+
+
+
+
+
+    	</div>
+    </div>
+
+	<!-- hyperloop -->
+	<div id="hyperloop1" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/hyperloop1.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+		<div id="hyperloop2" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/hyperloop2.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+		<div id="hyperloop3" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/hyperloop3.png">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+
+	<!-- humanskeleton -->
+
+	<div id="humanskeleton1" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/humanskeleton1.png">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+		<div id="humanskeleton2" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/humanskeleton2.png">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+
+	<div id="humanskeleton3" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/humanskeleton3.png">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+
+	<!-- SCRIPTS START HERE -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script>
+		// Changing the defaults
+		window.sr = ScrollReveal({ reset: true });
+
+		// Customizing a reveal set
+		sr.reveal('.foo', { duration: 500 });
+		sr.reveal('.bar', { duration: 1000 });
+
+    </script>
+
+    <script>
+    // Add scrollspy to <body>
+$('body').scrollspy({target: ".navbar", offset: 50}); 
+
+// Add smooth scrolling to all links inside a navbar
+$("#navbar a").on('click', function(event){
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash (#)
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    } // End if statement
+  });
+});
+</script>
+
+    </body>
+</html>

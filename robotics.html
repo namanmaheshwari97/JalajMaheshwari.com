@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en-us" manifest="jmaheshwari.appcache">
+    <head>
+        <!-- Meta tags here -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, user-scalable=false;">
+        
+        <title>
+            Jalaj Maheshwari | Robotics
+        </title>
+    
+        <!-- LINKS HERE -->
+        <link href='css/bootstrap-theme.min.css' rel='stylesheet' type='text/css'>
+        <link href='css/jalajmain.css' rel='stylesheet' type='text/css'>
+        <link href="css/scrolling-nav.css" rel="stylesheet">
+        <link href="css/hover.css" rel="stylesheet">
+        <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+        <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>  
+        <link href='css/animate.css' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+        <link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
+        <script src="js/scrolling-nav.js"></script>
+        <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
+
+        <script>
+            $("#myModal").on("show.bs.modal", function(e) {
+    var link = $(e.relatedTarget);
+    $(this).find(".modal-body").load(link.attr("href"));
+});
+        </script>
+
+    </head>
+    
+    <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">    
+<!-- NAVBAR STARTS HERE -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="navbar-inner">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll navbar-left" href="#page-top"  style="font-family:'Roboto',sans-serif">Jalaj Maheshwari</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="./index.html#page-top">Home</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#page-top">Home</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#about">About Me</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#skills">Skills</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#work">Professional Experience</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#publications">Publications</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#projects">Research Projects</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#contact">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 style="text-align: center; margin-top: 100px"> Robotics </h1>
+            <ol class="breadcrumb">
+            <li><a href="./index.html#projects">Research Projects</a></li>
+            <li class="active">Robotics</li>
+          </ol>
+          <hr>
+            </div>
+        </div>
+
+<!-- ====== START COPYING FOR PROJECT FROM HERE ====== -->
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Robockey</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li><p>Designed, built, and programmed three autonomous hockey playing robots.</p></li>
+                        <li><p>Incorporated localization of robot using infrared Wii remote cameras.</p></li>
+                        <li><p>Added wireless controls to recieve play commands during the game.</p></li>
+                    </ul>
+
+                    <hr>
+
+                    <p>The core of this project depended on the robot's localization i.e. know where the robots are on the rink. In order to do this the robots were equiped with IR cameras extracted from Nintendo Wii controllers. The Wii sensor sense 4 brightest IR sources in its field of view. A non-symmetrical IR star pattern was placed such that the mid point of the pattern coincided with the mid point of the rink, but separated by a height of about 5 meters. The localization algorithm was coded in way that the robot could calculate its position even with 3 or 2 stars.</p>
+
+                    <p>Once the robot knew where it was on the rink, it needed to find the puck on the rink. The puck consisted of 8 IR LEDs arranged equally around it. The attacking robots were equipped with 8 phototransitors multiplexed though an analog multiplexer. A simple threshold model was used to determine whether the robot had the puck once it drove to it. The goalkeeper was designed to move either left or right. Once the puck came into the pre-decided proximity of the goalkeeper, the robot moved sideways to prevent the opponent from scoring.</p>
+
+                    <p>Once the robot knew it had the puck, the algorithm commanded the robot to drive to the goal position depending on which side it was scoring. All robots were equipped with wireless modules to recieve game commands.</p>
+
+                    <p style="text-align: center;"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#robockeyvideo">Robot Match</button></p>
+                    <hr>
+
+                    <div class="col-lg-6 col-md-6">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#robockey1"><img src="./assets/robockey1.jpg" /></button>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#robockey2"><img src="./assets/robockey2.jpg" /></button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+<!-- NEW PROJECT -->
+
+<!-- ====== START COPYING FOR PROJECT FROM HERE ====== -->
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Acrobot</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li><p>Designed, built and programmed a robot to balance on two wheels.</p></li>
+                        <li><p>Used a microcontroller, motor driver and an inertial measurement unit.</p></li>
+                        <li><p>Implemented a tuned PID control law to make the robot balance on its own.</p></li>
+                    </ul>
+
+                    <hr>
+
+                    <p>The robot built was to be fully self-contained, only touch the ground through two coaxially-mounted wheels, and have a center of gravity that is at least one-half wheel radius above the wheel axis. All components were stacked on top of the motor mounting plate.</p>
+
+                    <p>The robot was equiped with a 9DOF IMU with a 3-axis accelerometer, 3-axis gyroscope, and a 3-axis magnetometer. The idea was to use the IMU to measure  how far off the robot is from its equilibrium position. A combination of a digital high pass and low pass filter was coded to combine the accelerometer and gyroscopic data to find the angle at which the robot is from its equilibrium position.</p>
+
+                    <p>This data was then used as input to a PID control law.</p>
+
+
+                    <p style="text-align: center;"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#acrobotvideo">Video</button></p>
+
+                    <hr>
+
+                    <div class="col-lg-4 col-md-4">
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#acrobot1"><img src="./assets/acrobot1.jpg" /></button>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+<!-- NEW PROJECT -->
+
+<!-- ====== START COPYING FOR PROJECT FROM HERE ====== -->
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Robotic Arm</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li><p>Solved and coded complete inverse kinematics for the PUMA 260 robotic arm.</p></li>
+                        <li><p>Simulated light painting of a rubix cube using the PUMA robot on MATLAB.</p></li>
+                        <li><p>Captured painting of rubix cube on actual PUMA robotic arm using long exposure photography.</p></li>
+                    </ul>
+
+                    <hr>
+
+                    <p>In order to reach a particular point in the reachable workspace, the inverse kinematics for the robot needs to be solved to determine the joint positions and angles it should be at to reach that point. The inverse kinematics for a PUMA 260 robotic arm are solved and coded on MATLAB. </p>
+
+                    <p>MATLAB code is written to make a PUMA 260 robotic arm draw something interesting in the air with a colored light, which is captured by taking a long-exposure photograph. Drawing precise, arbitrary shapes with the robot requires us to solve the robot's full inverse kinematics. As part of this project, the full inverse kinematics of the robotic arm are solved by hand. The inverse kinematics are further  coded on MATLAB. For the purpose of this project, we have chosen a rubix cube as the light painting. The MATLAB code is then run to simulate the  light painting. Once the painting comes out to what we want it to be, the code is then run on an actual PUMA 260 robotic arm. The LED on the PUMA arm is then used to reproduce the simulation. The light painting is then captured using long exposure photography.</p>
+
+                    <hr>
+
+                    <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#puma1"><img src="./assets/puma1.png" /></button>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#puma2"><img src="./assets/puma2.jpg" /></button>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#puma3"><img src="./assets/puma3.png" /></button>
+                    </div>
+
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+<!-- NEW PROJECT -->
+
+
+
+<!-- ====== START COPYING FOR PROJECT FROM HERE ====== -->
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Orchestra</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li><p>Designed and constructed a battery-powered, GF1004-based instrument capable of playing a tone for a specified duration when requested via a wireless command.</p></li>
+                    </ul>
+
+                    <hr>
+
+                    <p>The project dealt with coupling a microcontroller with a wireless module is order to produce sound in our specified frequency range. In order to generate a tone in the tenor range (180-300 Hz), the tone was generated using a sine table to generate a sine wave. This sine wave was later smoothened using a low pass RC filter. Using a transistor, the speaker was connected to produce the sound whenever the wireless signal was sent through the wireless transmitter.</p>
+
+
+                    <p style="text-align: center;"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#orchestravideo1">Stage Performance Video</button>
+
+                    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#orchestravideo2">Wireless Speaker Video</button>
+                    </p>
+
+
+                    <hr>
+
+                    
+
+                    <div class="col-lg-6 col-md-6">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#orchestra3"><img src="./assets/orchestra3.jpg" /></button>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#orchestra2"><img src="./assets/orchestra2.jpg" /></button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+<!-- NEW PROJECT -->
+
+
+
+<!-- ====== START COPYING FOR PROJECT FROM HERE ====== -->
+        <div class="row">
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Labyrinth</h3>
+                  </div>
+                  <div class="panel-body">
+                    <ul>
+                        <li><p>Built a joystick controlled, maze traversing robot, capable of carrying a 500 gram payload.</p></li>
+                    </ul>
+
+                    <hr>
+
+                    <p>The project aimed at building a maze traversing robot using a joystick. The challenge of the project was to build the robot without using any programmable   components (such as microcontrollers). Further, the robot had to be able to carry a 500 gram payload. The robot incorporated a motor driver circuit which was built using a quad-half H driver and a hex inverter.</p>
+
+
+                    <p style="text-align: center;"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#labyrinthvideo">Video</button>
+
+                    </p>
+
+                    <hr>
+                    
+                    <div class="col-lg-4 col-md-4">
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#labyrinth2"><img src="./assets/labyrinth2.jpg" /></button>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+        </div>
+<!-- NEW PROJECT -->
+
+
+        <div class="row">
+            <div class='list-group gallery'>
+            <div class="col-lg-2">
+            </div>
+            <div class="col-lg-8">
+              <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Implementation of Feedback System to Form a Train Chain (Independent)</h3>
+              </div>
+              <div class="panel-body">
+                <ul>
+                  <li><p>Utilized Arduino microcontroller, Ultrasonic Ping and Hall Effect sensors to implement feedback system.</p></li>
+                  <li><p>Coded PID control law on Arduino to make train follow lead train at fixed distance.</p></li>
+                </ul>
+
+                <hr>
+
+                <p>Uniform traffic flow is a concept that seems oblivious considering factors that contribute to bottlenecking of traffic such as human response. Thus, to implement a chain of vehicles following each other at a fixed distance, the knowledge of control systems can be implemented.</p>
+                <p>This project is a small step in that direction. Using an ultrasonic ping sensor, a Hall Effect sensor and an Arduino microcontroller, a PID law is coded to make a chain of small trains follow a lead train. The required gains needed for this purpose are calculated using frequency response techniques (Bode plots).</p>
+
+                <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#trainchain1"><img src="./assets/trainchain1.png" /></button>
+              </div>
+                <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#trainchain2"><img src="./assets/trainchain2.jpg" /></button>
+              </div>
+                <div class="col-lg-4 col-md-4">
+                          <button class="thumbnail" type="button" data-toggle="modal" data-target="#trainchain3"><img src="./assets/trainchain3.jpg" /></button>
+              </div>
+
+              </div>
+            </div>
+            </div>
+            <div class="col-lg-2">
+            </div>
+          </div>
+        </div>
+
+
+
+    <!-- robockey -->
+
+    <div id="robockey1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/robockey1.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <div id="robockey2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/robockey2.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <!-- acrobot -->
+
+    <div id="acrobot1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/acrobot1.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- puma -->
+
+    <div id="puma1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/puma1.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <div id="puma2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/puma2.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+        <div id="puma3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/puma3.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- orchestra -->
+        <div id="orchestra2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/orchestra2.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+        <div id="orchestra3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/orchestra3.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- labyrinth -->
+
+    <div id="labyrinth2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/labyrinth2.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- labyrinth -->
+
+    <div id="trainchain1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/trainchain1.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="trainchain2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/trainchain2.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="trainchain3" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <img class="modalimage" src="./assets/trainchain3.jpg">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+<!-- VIDEO MODALS -->
+
+
+    <div id="orchestravideo1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/6Wt-zw36RTg" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+        <div id="orchestravideo2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/R5_F6beHesw" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+        <div id="labyrinthvideo" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dhf12zGiCOE" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+        <div id="acrobotvideo" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OLtvb6sswF0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+        <div id="robockeyvideo" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wKEd1BkZtng" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- SCRIPTS START HERE -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script>
+        // Changing the defaults
+        window.sr = ScrollReveal({ reset: true });
+
+        // Customizing a reveal set
+        sr.reveal('.foo', { duration: 500 });
+        sr.reveal('.bar', { duration: 1000 });
+
+    </script>
+
+    <script>
+    // Add scrollspy to <body>
+$('body').scrollspy({target: ".navbar", offset: 50}); 
+
+// Add smooth scrolling to all links inside a navbar
+$("#navbar a").on('click', function(event){
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash (#)
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    } // End if statement
+  });
+});
+</script>
+
+    </body>
+</html>
