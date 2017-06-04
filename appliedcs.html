@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en-us" manifest="jmaheshwari.appcache">
+	<head>
+		<!-- Meta tags here -->
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+      	<meta name="viewport" content="width=device-width, user-scalable=false;">
+		
+		<title>
+			Jalaj Maheshwari | Applied CS
+		</title>
+		
+		<!-- LINKS HERE -->
+		<link href='css/bootstrap-theme.min.css' rel='stylesheet' type='text/css'>
+		<link href='css/jalajmain.css' rel='stylesheet' type='text/css'>
+		<link href="css/scrolling-nav.css" rel="stylesheet">
+		<link href="css/hover.css" rel="stylesheet">
+		<link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+		<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css' rel='stylesheet' type='text/css'>	
+		<link href='css/animate.css' rel='stylesheet' type='text/css'>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="js/jquery.modal.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/jquery.modal.css" type="text/css" media="screen" />
+		<script src="js/scrolling-nav.js"></script>
+		<script src="https://cdn.jsdelivr.net/scrollreveal.js/3.2.0/scrollreveal.min.js"></script>
+
+		<script>
+			$("#myModal").on("show.bs.modal", function(e) {
+    var link = $(e.relatedTarget);
+    $(this).find(".modal-body").load(link.attr("href"));
+});
+		</script>
+
+	</head>
+	
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">    
+<!-- NAVBAR STARTS HERE -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    	<div class="navbar-inner">
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll navbar-left" href="#page-top"  style="font-family:'Roboto',sans-serif">Jalaj Maheshwari</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a class="page-scroll" href="./index.html#page-top">Home</a>
+                    </li>
+	                <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#page-top">Home</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#about">About Me</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#skills">Skills</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#work">Professional Experience</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#publications">Publications</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#projects">Research Projects</a>
+                    </li>
+                    <li style="font-family:'Oswald',sans-serif">
+                        <a class="page-scroll" href="./index.html#contact">Contact</a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+    	<div class="row">
+    		<div class="col-lg-12">
+    			<h1 style="text-align: center; margin-top: 100px"> Applied CS </h1>
+    				<ol class="breadcrumb">
+					  <li><a href="./index.html#projects">Research Projects</a></li>
+					  <li class="active">Applied CS</li>
+					</ol>
+    			<hr>
+    		</div>
+    	</div>
+<!-- Next project -->
+    	<div class="row">
+    		<div class="col-lg-2">
+    		</div>
+    		<div class="col-lg-8">
+    			<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Finding Lane Lines on the Road (Independent)</h3>
+				  </div>
+				  <div class="panel-body">
+				    <ul>
+				    	<li><p>Detected highway lane lines on a video stream. </p></li>
+				    	<li><p>Used OpenCV image analysis techniques to identify lines, including Hough Transforms and Canny edge detection.</p></li>
+				    </ul>
+
+				    <p style="text-align: center;"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#P1video1">Yellow Lane Lines Detection</button></p>
+
+				    <p style="text-align: center;"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#P1video2">White Lane Lines Detection</button></p>
+
+				    <hr>
+
+				    <div class="col-lg-4 col-md-4">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#lanelinesdetection1"><img src="./assets/lanelinesdetection1.jpg" /></button>
+					</div>
+				    <div class="col-lg-4 col-md-4">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#lanelinesdetection2"><img src="./assets/lanelinesdetection2.jpg" /></button>
+					</div>
+				    <div class="col-lg-4 col-md-4">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#lanelinesdetection3"><img src="./assets/lanelinesdetection3.jpg" /></button>
+					</div>
+
+				  </div>
+				</div>
+    		</div>
+    		<div class="col-lg-2">
+    		</div>
+    	</div>
+
+<!-- Next project -->
+		<div class="row">
+    		<div class="col-lg-2">
+    		</div>
+    		<div class="col-lg-8">
+    			<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Traffic Sign Classification (Independent)</h3>
+				  </div>
+				  <div class="panel-body">
+				    <ul>
+				    	<li><p>Built and trained a deep neural network to classify traffic signs, using TensorFlow.</p></li>
+				    	<li><p>Experimented with different network architectures.</p></li>
+				    	<li><p>Performed image pre-processing and validation to guard against overfitting.</p></li>
+				    </ul>
+
+				    <hr>
+
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#trafficsigndetection1"><img src="./assets/trafficsigndetection1.jpg" /></button>
+					</div>
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#trafficsigndetection2"><img src="./assets/trafficsigndetection2.jpg" /></button>
+					</div>
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#trafficsigndetection3"><img src="./assets/trafficsigndetection3.jpg" /></button>
+					</div>
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#trafficsigndetection4"><img src="./assets/trafficsigndetection4.jpg" /></button>
+					</div>
+
+
+				  </div>
+				</div>
+    		</div>
+    		<div class="col-lg-2">
+    		</div>
+    	</div>
+
+<!-- Next project -->
+		<div class="row">
+    		<div class="col-lg-2">
+    		</div>
+    		<div class="col-lg-8">
+    			<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Use Deep Learning to Clone Driving Behavior (Independent)</h3>
+				  </div>
+				  <div class="panel-body">
+				    <ul>
+				    	<li><p>Built and trained a convolutional neural network for end-to-end driving in a simulator, using TensorFlow and Keras.</p></li>
+				    	<li><p>Used optimization techniques such as regularization and dropout to generalize the network for driving on multiple tracks.</p></li>
+				    </ul>
+					<p style="text-align: center;"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#P3video1">Behavioral Cloning - Autonomous Run</button></p>
+
+				    <hr>
+				    <div class="col-lg-3 col-md-3">
+				    </div>
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#behavioralcloning1"><img src="./assets/behavioralcloning1.jpg" /></button>
+					</div>
+
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#behavioralcloning2"><img src="./assets/behavioralcloning2.jpg" /></button>
+					</div>
+				    <div class="col-lg-3 col-md-3">
+				    </div>
+
+				  </div>
+				</div>
+    		</div>
+    		<div class="col-lg-2">
+    		</div>
+    	</div>
+
+<!-- Next project -->
+		<div class="row">
+    		<div class="col-lg-2">
+    		</div>
+    		<div class="col-lg-8">
+    			<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Advanced Lane Detection on Roads (Independent)</h3>
+				  </div>
+				  <div class="panel-body">
+				    <ul>
+				    	<li><p>Built an advanced lane-finding algorithm using distortion correction, image rectification, color transforms, and gradient thresholding.</p></li>
+				    	<li><p>Identified lane curvature and vehicle displacement. </p></li>
+				    	<li><p>Overcame environmental challenges such as shadows and pavement changes.</p></li>
+				    </ul>
+
+					<p style="text-align: center;"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#P4video1">Advanced Lane Lines</button></p>
+
+				    <hr>
+				    <div class="col-lg-3 col-md-3">
+					</div>
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#advancedlanelines1"><img src="./assets/advancedlanelines1.jpg" /></button>
+					</div>
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#advancedlanelines2"><img src="./assets/advancedlanelines2.jpg" /></button>
+					</div>
+				    <div class="col-lg-3 col-md-3">
+					</div>
+
+
+
+				  </div>
+				</div>
+    		</div>
+    		<div class="col-lg-2">
+    		</div>
+    	</div>
+
+<!-- Next project -->
+		<div class="row">
+    		<div class="col-lg-2">
+    		</div>
+    		<div class="col-lg-8">
+    			<div class="panel panel-default">
+				  <div class="panel-heading">
+				    <h3 class="panel-title">Vehicle Detection and Tracking. (Independent)</h3>
+				  </div>
+				  <div class="panel-body">
+				    <ul>
+				    	<li><p>Created a vehicle detection and tracking pipeline with OpenCV, histogram of oriented gradients (HOG), and support vector machines (SVM).</p></li>
+				    	<li><p>Optimized and evaluated the model on video data from a automotive camera taken during highway driving.</p></li>
+				    </ul>
+
+				    <p style="text-align: center;"><button class="btn btn-primary" type="button" data-toggle="modal" data-target="#P5video1">Vehicle Detection and Tracking</button></p>
+
+				    <hr>
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#vehicledetection1"><img src="./assets/vehicledetection1.png" /></button>
+					</div>
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#vehicledetection2"><img src="./assets/vehicledetection2.jpg" /></button>
+					</div>
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#vehicledetection3"><img src="./assets/vehicledetection3.jpg" /></button>
+					</div>
+				    <div class="col-lg-3 col-md-3">
+					      <button class="thumbnail" type="button" data-toggle="modal" data-target="#vehicledetection4"><img src="./assets/vehicledetection4.jpg" /></button>
+					</div>
+
+
+				  </div>
+				</div>
+    		</div>
+    		<div class="col-lg-2">
+    		</div>
+    	</div>
+
+
+    	</div> 
+    
+    </div> <!--CONTAINER ENDS HERE -->
+
+<!-- lanelines modal -->
+	<div id="lanelinesdetection1" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/lanelinesdetection1.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<div id="lanelinesdetection2" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/lanelinesdetection2.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<div id="lanelinesdetection3" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/lanelinesdetection3.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+
+<!-- trafficsigns modal -->
+
+	<div id="trafficsigndetection1" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/trafficsigndetection1.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<div id="trafficsigndetection2" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/trafficsigndetection2.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+
+	<div id="trafficsigndetection3" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/trafficsigndetection3.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<div id="trafficsigndetection4" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/trafficsigndetection4.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+<!-- behavioralcloning modal -->
+	<div id="behavioralcloning1" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/behavioralcloning1.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<div id="behavioralcloning2" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/behavioralcloning2.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+<!-- advancedlaneline modal -->
+	<div id="advancedlanelines1" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/advancedlanelines1.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<div id="advancedlanelines2" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/advancedlanelines2.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+<!-- vehicledetection modal -->
+	<div id="vehicledetection1" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/vehicledetection1.png">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<div id="vehicledetection2" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/vehicledetection2.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+	<div id="vehicledetection3" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/vehicledetection3.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+
+	<div id="vehicledetection4" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	      </div>
+	      <div class="modal-body">
+	        <img class="modalimage" src="./assets/vehicledetection4.jpg">
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+<!-- VIDEO MODALS -->
+
+
+
+    <div id="P1video1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Z_oO8cWDc0g" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="P1video2" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SnQN0rusILE" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+	<div id="P3video1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_x4Fx0ihw5s" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+	<div id="P4video1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ruIUgfZhbF8" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+	<div id="P5video1" class="modal fade" role="dialog">
+      <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/KfFFpk5AZL0" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+
+
+<!-- SCRIPTS START HERE -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script>
+		// Changing the defaults
+		window.sr = ScrollReveal({ reset: true });
+
+		// Customizing a reveal set
+		sr.reveal('.foo', { duration: 500 });
+		sr.reveal('.bar', { duration: 1000 });
+
+    </script>
+
+    <script>
+    // Add scrollspy to <body>
+$('body').scrollspy({target: ".navbar", offset: 50}); 
+
+// Add smooth scrolling to all links inside a navbar
+$("#navbar a").on('click', function(event){
+
+  // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash (#)
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 800, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    } // End if statement
+  });
+});
+</script>
+
+    </body>
+</html>
